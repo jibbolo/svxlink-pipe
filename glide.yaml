@@ -1,0 +1,5 @@
+package: github.com/jibbolo/pipe
+import:
+- package: github.com/olahol/melody
+- package: github.com/pressly/chi
+  version: ~1.0.0

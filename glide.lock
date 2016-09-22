@@ -1,0 +1,8 @@
+hash: f05de40ee2df77d9c394280fc8ab473f79e5679a62d7af76475febb18f6a1b5a
+updated: 2016-09-22T12:15:24.759348652+02:00
+imports:
+- name: github.com/olahol/melody
+  version: d1854c24f007c55b68192df6974311e9a076303d
+- name: github.com/pressly/chi
+  version: 0c0be26887fc176249c3bbd069cb9f9f3f757ed5
+testImports: []
