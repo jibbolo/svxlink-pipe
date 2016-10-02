@@ -33,15 +33,5 @@
 1474475267.434 Voter:sql_state Serano:+039 Assisi*+043 Bettona:+035 Lacugnano_-004 
 1474475268.434 Voter:sql_state Serano:+036 Assisi*+043 Bettona:+033 Lacugnano_-003 
 1474475269.207 Voter:sql_state Serano:+041 Assisi_-002 Bettona_-001 Lacugnano_-003 
-
-
-21.09.2016 18:28:07: NO Master 44.208.124.236
-21.09.2016 18:35:31: IS Master 44.208.124.236
-21.09.2016 18:35:31: ... MsgFlush::TYPE: 44.208.124.236
-21.09.2016 18:35:31: NO Master 44.208.124.236
-21.09.2016 18:35:31: IS Master 44.208.124.17
-21.09.2016 18:35:32: ...Audio timeout 44.208.124.17
-21.09.2016 18:35:32: NO Master 44.208.124.17
-21.09.2016 18:36:29: IS Master 185.127.199.3
-21.09.2016 18:36:31: ... MsgFlush::TYPE: 185.127.199.3
-21.09.2016 18:36:31: NO Master 185.127.199.3
+ 1474475244.883 Voter:sql_state Serano:+037 Assisi:+045 Bettona:+035 Lacugnano*-001 
+1474475244.883 Voter:sql_state Serano:+037 Assisi:+045 Bettona:+035 Lacugnano*-001 
