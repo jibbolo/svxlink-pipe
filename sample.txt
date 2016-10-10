@@ -33,5 +33,4 @@
 1474475267.434 Voter:sql_state Serano:+039 Assisi*+043 Bettona:+035 Lacugnano_-004 
 1474475268.434 Voter:sql_state Serano:+036 Assisi*+043 Bettona:+033 Lacugnano_-003 
 1474475269.207 Voter:sql_state Serano:+041 Assisi_-002 Bettona_-001 Lacugnano_-003 
- 1474475244.883 Voter:sql_state Serano:+037 Assisi:+045 Bettona:+035 Lacugnano*-001 
 1474475244.883 Voter:sql_state Serano:+037 Assisi:+045 Bettona:+035 Lacugnano*-001 

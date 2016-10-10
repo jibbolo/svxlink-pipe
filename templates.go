@@ -31,6 +31,8 @@ var templateIndex = []byte(`
       vertical-align:middle !important;
       text-align:center;
       font-size:85%;
+      background: #f0f0f0;
+      max-width:70px;
     }
     .raw {
       background-color: #333;
