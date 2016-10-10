@@ -1,4 +1,4 @@
-package: github.com/jibbolo/pipe
+package: github.com/jibbolo/svxlink-pipe
 import:
 - package: github.com/olahol/melody
 - package: github.com/pressly/chi

@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/jibbolo/pipe/parser"
+	"github.com/jibbolo/svxlink-pipe/parser"
 	"github.com/olahol/melody"
 	"github.com/pressly/chi"
 	"github.com/pressly/chi/middleware"
