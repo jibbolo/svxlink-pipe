@@ -1,10 +1,10 @@
-hash: c2f7ce23aedde1534fe6bbba2cafc2e7179bbe2920391af1ac986d910fed8e81
-updated: 2016-09-22T15:35:46.197660091+02:00
+hash: d410849e92cca0ddc44ea027c4fde9895f712ca729ef3c54379be0c63bee7057
+updated: 2016-11-13T12:33:01.724388959+01:00
 imports:
 - name: github.com/gorilla/websocket
-  version: 2d1e4548da234d9cb742cc3628556fef86aafbac
+  version: e8f0f8aaa98dfb6586cbdf2978d511e3199a960a
 - name: github.com/muesli/cache2go
-  version: c20d336474599558b10c49498f68725331ac6f42
+  version: 85b4c0beff6963ea48e14ab79ec8bced31a5efd4
 - name: github.com/olahol/melody
   version: d1854c24f007c55b68192df6974311e9a076303d
 - name: github.com/pressly/chi
@@ -12,7 +12,7 @@ imports:
   subpackages:
   - middleware
 - name: golang.org/x/net
-  version: 6d3beaea10370160dea67f5c9327ed791afd5389
+  version: 0e2717dc3cc05907dc23096ef3a9086ea93f567f
   subpackages:
   - context
 testImports: []

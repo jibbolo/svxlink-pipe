@@ -25,7 +25,7 @@ type Pipe struct {
 
 func NewPipe() *Pipe {
 	return &Pipe{
-		maxSize: MaxSize,
+		maxSize: maxSize,
 		m:       melody.New(),
 	}
 }
@@ -52,8 +52,8 @@ func (p *Pipe) Scan(r io.Reader) {
 	for scanner.Scan() {
 		b := scanner.Bytes()
 
-		if len(b) > MaxRowBytes {
-			// skip too long lines (we save records in ram)
+		if len(b) > maxRowBytes {
+			// skip too long lines (saving memory space)
 			continue
 		}
 
