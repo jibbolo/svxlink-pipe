@@ -67,13 +67,13 @@ var templateIndex = []byte(`
               var loc = $("<div>").addClass("loc");
 
               var name = $("<div class='name'>").text(location.name);
-              var value = $("<div class='value'>").text(location.value);
+              var value = $("<div class='value'>").text(location.siglev);
 
-              if(location.status=="*") {
+              if(location.active) {
                 td.addClass("success");
               }
 
-              if(location.positive){
+              if(location.siglev>0){
                 value.addClass("positive");
               } else {
                 value.prepend(location.positive_value);
