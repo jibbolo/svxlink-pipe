@@ -2,11 +2,12 @@ package main
 
 import (
 	"bufio"
-	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
 	"sync"
+
+	"log"
 
 	"github.com/jibbolo/svxlink-pipe/parser"
 	"github.com/olahol/melody"
@@ -21,12 +22,16 @@ type Pipe struct {
 	histLock sync.Mutex
 	maxSize  int
 	m        *melody.Melody
+	httpPort string
+	r        io.Reader
 }
 
-func NewPipe() *Pipe {
+func NewPipe(port string, r io.Reader) *Pipe {
 	return &Pipe{
-		maxSize: maxSize,
-		m:       melody.New(),
+		maxSize:  maxSize,
+		m:        melody.New(),
+		r:        r,
+		httpPort: port,
 	}
 }
 
@@ -47,8 +52,14 @@ func (p *Pipe) WriteHistory(s *melody.Session) {
 	}
 }
 
-func (p *Pipe) Scan(r io.Reader) {
-	scanner := bufio.NewScanner(r)
+func (p *Pipe) Scan() {
+	defer func() {
+		if err := recover(); err != nil {
+			log.Fatalf("cannot scan from input: %v", err)
+		}
+	}()
+
+	scanner := bufio.NewScanner(p.r)
 	for scanner.Scan() {
 		b := scanner.Bytes()
 
@@ -59,16 +70,13 @@ func (p *Pipe) Scan(r io.Reader) {
 
 		res, err := parser.Parse(b)
 		if err != nil {
-			fmt.Println(err)
+			fmt.Println("can't parse input:", err)
 			continue
 		}
-		encodedRes, err := json.Marshal(res)
-		if err != nil {
-			fmt.Println("can't marshal:", err)
-			continue
+		if len(res) > 0 {
+			pipe.SaveRecord(res)
+			p.m.Broadcast(res)
 		}
-		pipe.SaveRecord(encodedRes)
-		p.m.Broadcast(encodedRes)
 	}
 }
 
@@ -90,4 +98,9 @@ func (p *Pipe) NewRouter() chi.Router {
 		pipe.WriteHistory(s)
 	})
 	return r
+}
+
+func (p *Pipe) Run() error {
+	go p.Scan()
+	return http.ListenAndServe(":"+p.httpPort, p.NewRouter())
 }

@@ -1,29 +1,65 @@
 1474475019.789 Voter:sql_state Serano:+020 Assisi*+033 Bettona:+017 Lacugnano_-009 
 1474475020.776 Voter:sql_state Serano:+023 Assisi*+040 Bettona:+023 Lacugnano:+002 
-1474475021.776 Voter:sql_state Serano:+024 Assisi*+040 Bettona:+022 Lacugnano:+002 
-1474475022.777 Voter:sql_state Serano:+026 Assisi*+044 Bettona:+022 Lacugnano:+002 
 1474475023.777 Voter:sql_state Serano:+024 Assisi*+030 Bettona:+023 Lacugnano:+005 
 1474475024.777 Voter:sql_state Serano:+027 Assisi*+029 Bettona:+021 Lacugnano:+005 
 1474475025.778 Voter:sql_state Serano:+025 Assisi*+033 Bettona:+024 Lacugnano:+005 
+08.11.2016 18:36:42: IS Master 44.208.124.17
+08.11.2016 18:36:43: --- Client connected: 44.208.124.212:35285
+08.11.2016 18:36:48: --- Client disconnected: 44.208.124.212:35285
+08.11.2016 18:36:48: -X- removing client 44.208.124.212:35285 from client list
 1474475026.778 Voter:sql_state Serano:+026 Assisi*+035 Bettona:+024 Lacugnano:+006 
 1474475027.778 Voter:sql_state Serano:+023 Assisi*+034 Bettona:+021 Lacugnano:+005 
 1474475028.780 Voter:sql_state Serano:+021 Assisi*+035 Bettona:+024 Lacugnano:+005 
 1474475029.173 Voter:sql_state Serano_-013 Assisi_-005 Bettona_-001 Lacugnano:+004 
+08.11.2016 18:36:54: ... MsgFlush::TYPE: 44.208.124.17
+08.11.2016 18:36:54: NO Master 44.208.124.17
+08.11.2016 18:36:56: IS Master 44.208.124.236
+08.11.2016 18:37:05: ... MsgFlush::TYPE: 44.208.124.236
+08.11.2016 18:37:05: NO Master 44.208.124.236
+08.11.2016 18:37:08: --- Client connected: 44.208.124.212:35286
+08.11.2016 18:37:14: IS Master 44.208.124.236
+08.11.2016 18:37:17: ... MsgFlush::TYPE: 44.208.124.236
+08.11.2016 18:37:17: NO Master 44.208.124.236
+08.11.2016 18:37:17: IS Master 44.208.124.17
 1474475227.316 Voter:sql_state Serano:+025 Assisi*+032 Bettona_-001 Lacugnano_+000 
 1474475228.319 Voter:sql_state Serano:+032 Assisi*+042 Bettona:+018 Lacugnano:+000 
+08.11.2016 18:37:24: ... MsgFlush::TYPE: 44.208.124.17
+08.11.2016 18:37:24: NO Master 44.208.124.17
+08.11.2016 18:37:32: IS Master 44.208.124.236
+08.11.2016 18:37:40: *** ERROR: (44.208.124.212:35286) TCP transmit buffer overflow.
+08.11.2016 18:37:40: --- Client disconnected: 44.208.124.212:35286
+08.11.2016 18:37:40: -X- removing client 44.208.124.212:35286 from client list
+08.11.2016 18:37:42: ... MsgFlush::TYPE: 44.208.124.236
+08.11.2016 18:37:42: NO Master 44.208.124.236
+08.11.2016 18:38:02: --- Client connected: 44.208.124.212:35287
+1474475021.776 Voter:sql_state Serano:+024 Assisi*+040 Bettona:+022 Lacugnano:+002 
+1474475022.777 Voter:sql_state Serano:+026 Assisi*+044 Bettona:+022 Lacugnano:+002 
+08.11.2016 18:38:03: IS Master 44.208.124.212
+08.11.2016 18:38:05: --- Client disconnected: 44.208.124.212:35287
+08.11.2016 18:38:05: NO Master 44.208.124.212
+08.11.2016 18:38:05: -X- removing client 44.208.124.212:35287 from client list
+08.11.2016 18:38:23: IS Master 44.208.124.236
 1474475229.320 Voter:sql_state Serano:+033 Assisi*+040 Bettona:+023 Lacugnano_+001 
 1474475229.855 Voter:sql_state Serano_-014 Assisi_-004 Bettona_+004 Lacugnano_+001 
 1474475241.883 Voter:sql_state Serano:+027 Assisi*+037 Bettona:+032 Lacugnano_-007 
+08.11.2016 18:38:24: ... MsgFlush::TYPE: 44.208.124.236
+08.11.2016 18:38:24: NO Master 44.208.124.236
+08.11.2016 18:38:24: --- Client connected: 44.208.124.212:35288
+08.11.2016 18:38:26: IS Master 44.208.124.236
 1474475242.883 Voter:sql_state Serano:+037 Assisi*+045 Bettona:+035 Lacugnano_-005 
 1474475243.883 Voter:sql_state Serano:+041 Assisi*+046 Bettona:+035 Lacugnano_-002 
 1474475244.883 Voter:sql_state Serano:+037 Assisi*+045 Bettona:+035 Lacugnano_-001 
 1474475245.884 Voter:sql_state Serano:+035 Assisi*+049 Bettona:+033 Lacugnano_-005 
 1474475246.884 Voter:sql_state Serano:+035 Assisi*+047 Bettona:+034 Lacugnano_-005 
+08.11.2016 18:38:36: ... MsgFlush::TYPE: 44.208.124.236
+08.11.2016 18:38:36: NO Master 44.208.124.236
 1474475247.884 Voter:sql_state Serano:+038 Assisi*+047 Bettona:+035 Lacugnano_-001 
 1474475248.885 Voter:sql_state Serano:+035 Assisi*+049 Bettona:+038 Lacugnano_-004 
 1474475249.885 Voter:sql_state Serano:+034 Assisi*+047 Bettona:+038 Lacugnano_-001 
 1474475250.885 Voter:sql_state Serano:+028 Assisi*+047 Bettona:+038 Lacugnano_-002 
 1474475251.886 Voter:sql_state Serano:+039 Assisi*+047 Bettona:+036 Lacugnano_-008 
+08.11.2016 18:38:38: IS Master 44.208.124.236
+08.11.2016 18:38:47: ... MsgFlush::TYPE: 44.208.124.236
 1474475252.886 Voter:sql_state Serano:+041 Assisi*+037 Bettona:+031 Lacugnano_-004 
 1474475253.886 Voter:sql_state Serano:+041 Assisi*+046 Bettona:+035 Lacugnano_-003 
 1474475254.887 Voter:sql_state Serano:+039 Assisi*+046 Bettona:+034 Lacugnano_-005 
@@ -34,3 +70,4 @@
 1474475268.434 Voter:sql_state Serano:+036 Assisi*+043 Bettona:+033 Lacugnano_-003 
 1474475269.207 Voter:sql_state Serano:+041 Assisi_-002 Bettona_-001 Lacugnano_-003 
 1474475244.883 Voter:sql_state Serano:+037 Assisi:+045 Bettona:+035 Lacugnano*-001 
+stocazzo

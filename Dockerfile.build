@@ -1,0 +1,8 @@
+FROM golang:1.8.3
+ADD . /go/src/github.com/jibbolo/svxlink-pipe/
+WORKDIR /go/src/github.com/jibbolo/svxlink-pipe/
+
+RUN go get github.com/Masterminds/glide
+RUN glide update
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=386 go build -v -o application
+

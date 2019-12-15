@@ -1,7 +1,7 @@
 package main
 
 import (
-	"net/http"
+	"log"
 	"os"
 )
 
@@ -15,7 +15,6 @@ func main() {
 	if port == "" {
 		port = "3334"
 	}
-	pipe = NewPipe()
-	go pipe.Scan(os.Stdin)
-	http.ListenAndServe(":"+port, pipe.NewRouter())
+	pipe = NewPipe(port, os.Stdin)
+	log.Fatal(pipe.Run())
 }
