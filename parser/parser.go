@@ -10,8 +10,8 @@ import (
 
 const maxLocationNumber = 15
 
-var locationRgx = regexp.MustCompile(`([a-zA-Z]+)(:|\*|\_)(\+|\-)([0-9]{3})`)
 var recordSQLState = regexp.MustCompile(`^\d+\.\d+ Voter:sql_state`)
+var recordTXState = regexp.MustCompile(`^\d+\.\d+ Tx:state`)
 
 // {
 //     "active": true,
@@ -40,6 +40,9 @@ func Parse(input []byte) ([]byte, error) {
 
 	if recordSQLState.Match(input) {
 		return parseSQLState(input)
+	}
+	if recordTXState.Match(input) {
+		return []byte{}, nil
 	}
 	return []byte{}, fmt.Errorf("unhandled input `%s", input)
 }
