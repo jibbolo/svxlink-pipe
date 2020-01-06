@@ -8,7 +8,7 @@ import (
 var pipe *Pipe
 
 const maxSize = 30
-const maxRowBytes = 500
+const maxRowBytes = 2048
 
 func main() {
 	port := os.Getenv("PORT")
