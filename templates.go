@@ -21,10 +21,10 @@ var templateIndex = []byte(`
       color:green;
       font-weight:bold;
     }
-    .value.positive::before { 
+    .value.positive::before {
         content: "+";
     }
-    .positive::before { 
+    .positive::before {
         content: "+";
     }
     .time {
@@ -52,7 +52,7 @@ var templateIndex = []byte(`
           var time = $("<td>").addClass("time");
           var timeBig = $("<span>").addClass("hidden-xs");
           var timeSmall = $("<span>").addClass("visible-xs-* hidden-sm hidden-md hidden-lg");
-          
+
           var d = moment(new Date(record.time));
 
           timeBig.text(d.format("MMM Do YY, hh:mm:ss"));
@@ -109,7 +109,7 @@ var templateIndex = []byte(`
         // $("#records").on("click","td.raw",function(){
         //   $(this).hide();
         // });
-      });  
+      });
     </script>
   </head>
   <body>
@@ -117,17 +117,6 @@ var templateIndex = []byte(`
       <table class='table table-hover table-bordered table-condensed'><tbody></tbody></table>
     </div>
   </body>
-  
+
 </html>
 `)
-
-// <script>
-
-//          var url = "ws://" + window.location.host + "/ws";
-//         var ws = new WebSocket(url);
-//         ws.onmessage = function (msg) {
-//           var record = JSON.parse(msg.data)
-//           console.log(record);
-//           addRecord(record);
-//         };
-//   </script>

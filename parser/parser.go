@@ -60,7 +60,7 @@ func parseSQLState(input []byte) ([]byte, error) {
 		Time: timestamp,
 		Raw:  string(input),
 	}
-	jsonPart := input[31:len(input)]
+	jsonPart := input[31:]
 	if err := json.Unmarshal(jsonPart, &res.Locations); err != nil {
 		return []byte{}, fmt.Errorf("can't parse json locations `%s: %s", jsonPart, err)
 	}

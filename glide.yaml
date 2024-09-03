@@ -1,6 +1,0 @@
-package: github.com/jibbolo/svxlink-pipe
-import:
-- package: github.com/olahol/melody
-- package: github.com/pressly/chi
-  version: ~1.0.0
-- package: github.com/muesli/cache2go

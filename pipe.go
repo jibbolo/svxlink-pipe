@@ -9,10 +9,10 @@ import (
 
 	"log"
 
+	"github.com/go-chi/chi/v5"
+	"github.com/go-chi/chi/v5/middleware"
 	"github.com/jibbolo/svxlink-pipe/parser"
 	"github.com/olahol/melody"
-	"github.com/pressly/chi"
-	"github.com/pressly/chi/middleware"
 )
 
 type record []byte
